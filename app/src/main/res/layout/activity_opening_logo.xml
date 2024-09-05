@@ -7,4 +7,41 @@
     android:layout_height="match_parent"
     tools:context=".OpeningLogo">
 
+    <ImageView
+        android:id="@+id/openingLogoImage"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/loadImage1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/loadImage2" />
+
+    <ImageView
+        android:id="@+id/loadImage2"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/loadImage1"
+        app:layout_constraintStart_toEndOf="@id/loadImage1"
+        app:layout_constraintEnd_toStartOf="@id/loadImage3" />
+
+    <ImageView
+        android:id="@+id/loadImage3"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:visibility="invisible"
+        app:layout_constraintTop_toTopOf="@id/loadImage2"
+        app:layout_constraintStart_toEndOf="@id/loadImage2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
