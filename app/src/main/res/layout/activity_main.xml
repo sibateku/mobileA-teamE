@@ -40,7 +40,7 @@
 
     <Button
         android:id="@+id/buttonMain"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
         android:text="次のご飯を探す"
@@ -52,7 +52,7 @@
         android:id="@+id/textFood"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="100dp"
         android:layout_marginStart="10dp"
         android:textSize="20sp"
         android:text="食べ物ジャンル"
@@ -61,7 +61,7 @@
 
     <Button
         android:id="@+id/buttonFood"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="ここから探す"
@@ -82,7 +82,7 @@
 
     <Button
         android:id="@+id/buttonCurrentLocation"
-        android:layout_width="wrap_content"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="現在地から探す"
