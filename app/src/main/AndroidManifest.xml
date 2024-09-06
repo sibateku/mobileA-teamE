@@ -13,6 +13,12 @@
         android:theme="@style/Theme.MobileAteamE"
         tools:targetApi="31">
         <activity
+            android:name=".AteSelect"
+            android:exported="false" />
+        <activity
+            android:name=".introduction"
+            android:exported="false" />
+        <activity
             android:name=".ShopChosingActivity"
             android:exported="false" />
         <activity
