@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AteSelect">
+
+    <TextView
+        android:id="@+id/viewGenre"
+        android:text="選択されたジャンル"
+        android:textSize="30dp"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSearch" />
+
+    <Button
+        android:id="@+id/buttonSearch"
+        android:text="確認"
+        android:textSize="20dp"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toEndOf="@+id/viewGenre"
+        app:layout_constraintTop_toTopOf="@+id/viewGenre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/viewGenre"/>
+
+    <!--ステーキ-->
+    <Button
+        android:id="@+id/buttonGenre1"
+        android:text="ステーキ"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/viewGenre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenre2" />
+
+    <!--寿司-->
+    <Button
+        android:id="@+id/buttonGenre2"
+        android:text="寿司"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonGenre1"
+        app:layout_constraintTop_toTopOf="@id/buttonGenre1"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenre3" />
+
+    <!--丼ぶり-->
+    <Button
+        android:id="@+id/buttonGenre3"
+        android:text="丼ぶり"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/buttonGenre1"
+        app:layout_constraintStart_toEndOf="@id/buttonGenre2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--ラーメン-->
+    <Button
+        android:id="@+id/buttonGenre4"
+        android:text="ラーメン"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGenre1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenre5" />
+
+    <!--洋食-->
+    <Button
+        android:id="@+id/buttonGenre5"
+        android:text="洋食"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonGenre1"
+        app:layout_constraintTop_toTopOf="@id/buttonGenre4"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenre6" />
+
+    <!--和食-->
+    <Button
+        android:id="@+id/buttonGenre6"
+        android:text="和食"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/buttonGenre4"
+        app:layout_constraintStart_toEndOf="@id/buttonGenre5"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!--定食-->
+    <Button
+        android:id="@+id/buttonGenre7"
+        android:text="定食"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGenre"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenreJankfood" />
+
+    <!--ジャンクフード-->
+    <Button
+        android:id="@+id/buttonGenre8"
+        android:text="ジャンクフード"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonGenreTeisyoku"
+        app:layout_constraintTop_toTopOf="@id/buttonGenreTeisyoku"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenreDesart" />
+
+    <!--デザート-->
+    <Button
+        android:id="@+id/buttonGenre9"
+        android:text="デザート"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/buttonGenreTeisyoku"
+        app:layout_constraintStart_toEndOf="@id/buttonGenreJankfood"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonClear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        con
+    <!--
+
+    <Button
+        android:id="@+id/buttonGenreIzakaya"
+        android:text="居酒屋"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGenreTeisyoku"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenreCafe" />
+
+
+    <Button
+        android:id="@+id/buttonGenreCafe"
+        android:text="カフェ"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintStart_toEndOf="@+id/buttonGenreIzakaya"
+        app:layout_constraintTop_toTopOf="@id/buttonGenreIzakaya"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenreBar" />
+
+
+    <Button
+        android:id="@+id/buttonGenreBar"
+        android:text="バー"
+        android:textSize="15dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/buttonGenreIzakaya"
+        app:layout_constraintStart_toEndOf="@id/buttonGenreCafe"
+        app:layout_constraintEnd_toEndOf="parent" />
+    -->
+
+    <!--
+    <CheckBox
+        android:id="@+id/check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonGenreIzakaya" />
+
+    <TextView
+        android:id="@+id/viewCheck"
+        android:text="同じジャンルのものを表示しない"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toTopOf="@+id/check"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="@+id/check"/>
+    -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
