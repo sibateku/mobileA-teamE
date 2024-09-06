@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopChosingActivity">
+
+    <TextView
+        android:id="@+id/textshopTit"
+        android:text="@string/shopsName"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <!-- 店名のtext内容は本来、変数にすること -->
+    <TextView
+        android:id="@+id/textShopN1"
+        android:text="名城食堂"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="23dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textshopTit"
+        />
+    <TextView
+        android:id="@+id/textShopJ1"
+        android:text="ジャンル: 定食"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textShopN1"
+        />
+
+    <TextView
+        android:id="@+id/textShopH1"
+        android:text="訪れた人数: 〇〇人"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/textShopJ1"
+        app:layout_constraintTop_toTopOf="@+id/textShopJ1"
+        />
+
+    <ImageView
+        android:id="@+id/imageShop1"
+
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintStart_toEndOf="@+id/textShopH1"
+        app:layout_constraintTop_toTopOf="@+id/textShopJ1"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

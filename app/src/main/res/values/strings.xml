@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">mobileA-teamE</string>
+    <string name="shopsName"><u>候補に挙がったお店</u></string>
 </resources>
