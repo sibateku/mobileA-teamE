@@ -19,6 +19,9 @@
             android:name=".introduction"
             android:exported="false" />
         <activity
+            android:name=".ShopChosingActivity"
+            android:exported="false" />
+        <activity
             android:name=".OpeningLogo"
             android:exported="true">
             <intent-filter>
