@@ -112,9 +112,9 @@
         android:layout_height="100dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintTop_toBottomOf="@+id/buttonGenre"
+        app:layout_constraintTop_toBottomOf="@+id/buttonGenre4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/buttonGenreJankfood" />
+        app:layout_constraintEnd_toStartOf="@id/buttonGenre8" />
 
     <!--ジャンクフード-->
     <Button
@@ -123,9 +123,9 @@
         android:textSize="15dp"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintStart_toEndOf="@+id/buttonGenreTeisyoku"
-        app:layout_constraintTop_toTopOf="@id/buttonGenreTeisyoku"
-        app:layout_constraintEnd_toStartOf="@id/buttonGenreDesart" />
+        app:layout_constraintStart_toEndOf="@+id/buttonGenre7"
+        app:layout_constraintTop_toTopOf="@id/buttonGenre7"
+        app:layout_constraintEnd_toStartOf="@id/buttonGenre9" />
 
     <!--デザート-->
     <Button
@@ -135,15 +135,10 @@
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:layout_marginEnd="10dp"
-        app:layout_constraintTop_toTopOf="@id/buttonGenreTeisyoku"
-        app:layout_constraintStart_toEndOf="@id/buttonGenreJankfood"
+        app:layout_constraintTop_toTopOf="@id/buttonGenre7"
+        app:layout_constraintStart_toEndOf="@id/buttonGenre8"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/buttonClear"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        con
     <!--
 
     <Button
