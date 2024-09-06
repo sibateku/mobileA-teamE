@@ -1,5 +1,6 @@
 package jp.ac.meijou.android.teame;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -29,6 +30,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
         setImage();
+
+        binding.buttonMain.setOnClickListener(view -> {
+            var intent = new Intent(this, AteSelect.class);
+            startActivity(intent);
+        });
     }
 
     private void setImage() {

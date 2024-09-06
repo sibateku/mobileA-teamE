@@ -28,11 +28,5 @@ public class AteSelect extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-
-        binding.viewGenre.setText("");
-
-        binding.buttonGenreSteak.setOnClickListener(view -> {
-            var text =
-        });
     }
 }
