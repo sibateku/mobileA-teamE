@@ -8,12 +8,202 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:textSize="30sp"
+        android:text="AppName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageSeason"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/textAppName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:text="今のおすすめはコレ！"
+        app:layout_constraintTop_toBottomOf="@id/imageSeason"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonMain"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="次のご飯を探す"
+        app:layout_constraintTop_toBottomOf="@id/textExplanation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="食べ物ジャンル"
+        app:layout_constraintTop_toBottomOf="@id/buttonMain"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFood"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="ここから探す"
+        app:layout_constraintTop_toBottomOf="@id/textFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="場所"
+        app:layout_constraintTop_toBottomOf="@id/buttonFood"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonCurrentLocation"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="現在地から探す"
+        app:layout_constraintTop_toBottomOf="@id/textArea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAreaInside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="大学内で探す"
+        app:layout_constraintTop_toBottomOf="@id/buttonCurrentLocation"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonAreaOutside" />
+
+    <Button
+        android:id="@+id/buttonAreaOutside"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="大学外で探す"
+        app:layout_constraintTop_toTopOf="@id/buttonAreaInside"
+        app:layout_constraintStart_toEndOf="@id/buttonAreaInside"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!--
+    <TextView
+        android:id="@+id/textFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="食べ物ジャンルから探す"
+        app:layout_constraintTop_toBottomOf="@id/textExplanation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFoodIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="詳細"
+        app:layout_constraintTop_toTopOf="@id/textFood"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonFood1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="丼"
+        app:layout_constraintTop_toBottomOf="@id/textFood"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonFood2" />
+
+    <Button
+        android:id="@+id/buttonFood2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="麺"
+        app:layout_constraintTop_toTopOf="@id/buttonFood1"
+        app:layout_constraintStart_toEndOf="@id/buttonFood1"
+        app:layout_constraintEnd_toStartOf="@id/buttonFood3" />
+
+    <Button
+        android:id="@+id/buttonFood3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="その他"
+        app:layout_constraintTop_toTopOf="@id/buttonFood2"
+        app:layout_constraintStart_toEndOf="@id/buttonFood2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textArea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="10dp"
+        android:textSize="20sp"
+        android:text="場所から探す"
+        app:layout_constraintTop_toBottomOf="@id/buttonFood1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/buttonAreaIndex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="詳細"
+        app:layout_constraintTop_toTopOf="@id/textArea"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonArea1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="場所1"
+        app:layout_constraintTop_toBottomOf="@id/textArea"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/buttonArea2" />
+
+    <Button
+        android:id="@+id/buttonArea2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="場所2"
+        app:layout_constraintTop_toTopOf="@id/buttonArea1"
+        app:layout_constraintStart_toEndOf="@id/buttonArea1"
+        app:layout_constraintEnd_toStartOf="@id/buttonArea3" />
+
+    <Button
+        android:id="@+id/buttonArea3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="場所3"
+        app:layout_constraintTop_toTopOf="@id/buttonArea2"
+        app:layout_constraintStart_toEndOf="@id/buttonArea2"
+        app:layout_constraintEnd_toEndOf="parent" />
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
