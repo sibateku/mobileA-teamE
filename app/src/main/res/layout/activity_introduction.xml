@@ -18,6 +18,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toTopOf="@id/imageStore"/>
 
+    <TextView
+        android:id="@+id/viewSelectedGenre"
+        android:text="選択されたジャンルはここに表示"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewTerms"
+        app:layout_constraintEnd_toEndOf="parent" />
+
     <ImageView
         android:id="@+id/imageStore"
         android:layout_width="match_parent"
@@ -27,6 +38,16 @@
         app:layout_constraintTop_toBottomOf="@+id/viewTerms"
         app:layout_constraintBottom_toBottomOf="parent" />
 
+    <TextView
+        android:id="@+id/searchingText"
+        android:text="検索中..."
+        android:textSize="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewSelectedGenre"
+        app:layout_constraintEnd_toEndOf="parent" />
     <!--
     <TextView
         android:id="@+id/viewStoreTitle"

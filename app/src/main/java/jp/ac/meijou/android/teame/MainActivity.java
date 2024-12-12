@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
         setImage();
 
         binding.buttonMain.setOnClickListener(view -> {
+            var intent = new Intent(this, AteSelectElimination.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+            startActivity(intent);
+        });
+
+        // ここから探すボタンに遷移処理を設定
+        binding.buttonFood.setOnClickListener(view -> {
             var intent = new Intent(this, AteSelect.class);
             startActivity(intent);
         });

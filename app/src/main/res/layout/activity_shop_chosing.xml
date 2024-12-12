@@ -21,8 +21,8 @@
         />
     <!-- 店名のtext内容は本来、変数にすること -->
     <TextView
-        android:id="@+id/textShopN1"
-        android:text="名城食堂"
+        android:id="@+id/textShopTitle"
+        android:text="店名"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,8 +33,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textshopTit"
         />
     <TextView
-        android:id="@+id/textShopJ1"
-        android:text="ジャンル: 定食"
+        android:id="@+id/textShopDetails"
+        android:text="店の詳細"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:layout_marginTop="10dp"
         android:layout_marginStart="15dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textShopN1"
+        app:layout_constraintTop_toBottomOf="@+id/textShopTitle"
         />
 
     <TextView
@@ -53,8 +53,8 @@
         android:layout_height="wrap_content"
         android:textSize="15dp"
         android:layout_marginStart="15dp"
-        app:layout_constraintStart_toEndOf="@+id/textShopJ1"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ1"
+        app:layout_constraintStart_toEndOf="@+id/textShopDetails"
+        app:layout_constraintTop_toTopOf="@+id/textShopDetails"
         />
 
     <ImageView
@@ -65,8 +65,28 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="-40dp"
         app:layout_constraintStart_toEndOf="@+id/textShopH1"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ1"
+        app:layout_constraintTop_toTopOf="@+id/textShopDetails"
         />
+
+    <Button
+        android:id="@+id/buttonReSearch"
+        android:text="再検索"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textShopDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGoHome"
+        android:text="ホームに戻る"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonReSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
