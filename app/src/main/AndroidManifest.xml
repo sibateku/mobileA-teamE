@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
@@ -11,31 +12,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MobileAteamE"
-        tools:targetApi="31">
-        <activity
-            android:name=".ShopDetail"
-            android:exported="false" />
-        <activity
-            android:name=".AteSelect"
-            android:exported="false" />
-        <activity
-            android:name=".introduction"
-            android:exported="false" />
-        <activity
-            android:name=".ShopChosingActivity"
-            android:exported="false" />
-        <activity
-            android:name=".OpeningLogo"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        tools:targetApi="31" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true" />
-    </application>
+    <activity
+        android:name=".AteSelect"
+        android:exported="false" />
+    <activity
+        android:name=".introduction"
+        android:exported="false" />
+    <activity
+        android:name=".ShopChosingActivity"
+        android:exported="false" />
+    <activity
+        android:name=".OpeningLogo"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity
+        android:name=".MainActivity"
+        android:exported="true" />
 
 </manifest>
