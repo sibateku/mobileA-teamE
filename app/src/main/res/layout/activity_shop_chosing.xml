@@ -21,8 +21,8 @@
         />
     <!-- 店名のtext内容は本来、変数にすること -->
     <TextView
-        android:id="@+id/textShopN1"
-        android:text="名城食堂"
+        android:id="@+id/textShopTitle"
+        android:text="店名"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,8 +33,8 @@
         app:layout_constraintTop_toBottomOf="@+id/textshopTit"
         />
     <TextView
-        android:id="@+id/textShopJ1"
-        android:text="ジャンル: 定食"
+        android:id="@+id/textShopDetails"
+        android:text="店の詳細"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,7 +42,7 @@
         android:layout_marginTop="10sp"
         android:layout_marginStart="15sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textShopN1"
+        app:layout_constraintTop_toBottomOf="@+id/textShopTitle"
         />
 
     <TextView
@@ -51,10 +51,10 @@
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="15sp"
-        android:layout_marginStart="15sp"
-        app:layout_constraintStart_toEndOf="@+id/textShopJ1"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ1"
+        android:textSize="15dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintStart_toEndOf="@+id/textShopDetails"
+        app:layout_constraintTop_toTopOf="@+id/textShopDetails"
         />
 
     <Button
@@ -80,10 +80,30 @@
         android:layout_marginStart="45sp"
         android:layout_marginTop="-40sp"
         app:layout_constraintStart_toEndOf="@+id/textShopH1"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ1"
+        app:layout_constraintTop_toTopOf="@+id/textShopDetails"
         />
 
+    <Button
+        android:id="@+id/buttonReSearch"
+        android:text="再検索"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textShopDetails"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonGoHome"
+        android:text="ホームに戻る"
+        android:textSize="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/buttonReSearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
     <!-- 店2個目 -->
+    <!--
     <TextView
         android:id="@+id/textShopN2"
         android:text="ショップ2"
@@ -138,7 +158,7 @@
         app:layout_constraintEnd_toEndOf="@+id/imageShop1"
         app:layout_constraintTop_toTopOf="@+id/textShopJ2" />
 
-    <!-- 店3個目 -->
+     店3個目
     <TextView
         android:id="@+id/textShopN3"
         android:text="ショップ3"
@@ -189,7 +209,6 @@
         android:layout_marginTop="-40sp"
         app:layout_constraintStart_toStartOf="@+id/imageShop1"
         app:layout_constraintEnd_toEndOf="@+id/imageShop1"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ3" />
-
+        app:layout_constraintTop_toTopOf="@+id/textShopJ3" /> -->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

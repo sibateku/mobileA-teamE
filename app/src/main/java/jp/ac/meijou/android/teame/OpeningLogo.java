@@ -73,5 +73,6 @@ public class OpeningLogo extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         handler.removeCallbacksAndMessages(null);
+        finish();
     }
 }
