@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShopDetail">
+
+    <TextView
+        android:id="@+id/textShopName"
+        android:text="名城食堂"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+
+        android:textSize="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <ImageView
+        android:id="@+id/imageShop1"
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        android:layout_marginTop="40sp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/textShopName"
+        />
+    <ImageView
+        android:id="@+id/imageShop2"
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        android:layout_marginTop="40sp"
+        app:layout_constraintStart_toEndOf="@+id/imageShop1"
+        android:layout_marginStart="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/imageShop3"
+        app:layout_constraintTop_toBottomOf="@+id/textShopName"
+        />
+    <ImageView
+        android:id="@+id/imageShop3"
+        android:layout_width="180sp"
+        android:layout_height="180sp"
+        android:layout_marginTop="40sp"
+        app:layout_constraintStart_toEndOf="@+id/imageShop2"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textShopName"
+        />
+    <TextView
+        android:id="@+id/textCmt"
+        android:text="3つの日替わり定食から選べます。\n カレーもおいしいよ！"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageShop2"
+        />
+
+    <TextView
+        android:id="@+id/textCountH"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="200sp"
+        android:text="ご予約人数:"
+
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCmt" />
+    <Spinner
+        android:id="@+id/spinnerH"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50sp"
+
+        android:background="#73C8EF"
+        app:layout_constraintStart_toEndOf="@id/textCountH"
+        app:layout_constraintTop_toTopOf="@+id/textCountH"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textHum"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:text="人"
+
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/spinnerH"
+        app:layout_constraintTop_toTopOf="@+id/spinnerH" />
+
+    <TextView
+        android:id="@+id/textCountT"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50sp"
+        android:layout_marginTop="40sp"
+        android:text="ご予約人数:"
+
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCountH" />
+    <Spinner
+        android:id="@+id/spinnerYear"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50sp"
+
+        android:background="#73C8EF"
+        app:layout_constraintStart_toEndOf="@id/textCountT"
+        app:layout_constraintTop_toTopOf="@+id/textCountT"
+        tools:ignore="MissingConstraints" />
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5sp"
+        android:layout_marginTop="40sp"
+        android:text="年"
+
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/spinnerYear"
+        app:layout_constraintTop_toBottomOf="@+id/textCountH" />
+    <Spinner
+        android:id="@+id/spinnerDate"
+        android:layout_width="100sp"
+        android:layout_height="50sp"
+        android:layout_marginStart="50sp"
+
+        android:background="#73C8EF"
+        app:layout_constraintStart_toEndOf="@id/spinnerYear"
+        app:layout_constraintTop_toTopOf="@+id/textCountT"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonRsv"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="60dp"
+        android:backgroundTint="#E93838"
+        android:text="予約を行う"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinnerYear" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
