@@ -8,15 +8,16 @@
 
     <TextView
         android:id="@+id/viewGenre"
-        android:text="選択されたジャンル"
-        android:textSize="30dp"
         android:layout_width="280dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="70dp"
+        android:layout_marginTop="116dp"
+        android:text="食べたくないジャンル"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonSearch"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/buttonSearch" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/buttonGenre1"

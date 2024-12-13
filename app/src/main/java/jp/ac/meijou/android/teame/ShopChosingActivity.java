@@ -29,33 +29,44 @@ public class ShopChosingActivity extends AppCompatActivity {
 
         });
 
-        // 店名とジャンルを表示
+        // 店名とジャンルを表示するTextView
         TextView textShopTitle = findViewById(R.id.textShopTitle);
         TextView textShopDetails = findViewById(R.id.textShopDetails);
 
-        // 店名と詳細をIntentから取得
+        // 店名とジャンルをIntentから取得
         String storeName = getIntent().getStringExtra("storeName");
         String genre = getIntent().getStringExtra("selectedGenre");
 
+        // 店名とジャンルをTextViewに設定
         if (storeName != null && genre != null) {
             textShopTitle.setText(storeName);
             textShopDetails.setText("ジャンル: " + genre);
+        } else {
+            textShopTitle.setText("店名が選択されていません");
+            textShopDetails.setText("ジャンルが選択されていません");
         }
 
-        // 再検索ボタン
+        // 再検索ボタンの処理
         Button buttonReSearch = findViewById(R.id.buttonReSearch);
         buttonReSearch.setOnClickListener(v -> {
-            // activity_introductionに遷移
             Intent intent = new Intent(ShopChosingActivity.this, AteSelect.class);
             startActivity(intent);
         });
 
-        // ホームに戻るボタン
+        // ホームに戻るボタンの処理
         Button buttonGoHome = findViewById(R.id.buttonGoHome);
         buttonGoHome.setOnClickListener(v -> {
-            // ホーム画面に遷移
             Intent homeIntent = new Intent(ShopChosingActivity.this, MainActivity.class);
             startActivity(homeIntent);
+        });
+
+        // この店を予約するボタンの処理
+        Button buttonReserve = findViewById(R.id.buttonShopR1);
+        buttonReserve.setOnClickListener(v -> {
+            Intent reserveIntent = new Intent(ShopChosingActivity.this, ShopDetail.class);
+            reserveIntent.putExtra("storeName", storeName);
+            reserveIntent.putExtra("selectedGenre", genre);
+            startActivity(reserveIntent);
         });
     }
 }
