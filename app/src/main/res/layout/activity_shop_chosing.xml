@@ -34,7 +34,7 @@
         />
     <TextView
         android:id="@+id/textShopDetails"
-        android:text="店の詳細"
+        android:text="ジャンル"
 
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
 
         android:layout_height="wrap_content"
         android:layout_marginStart="-10sp"
-        android:layout_marginTop="10sp"
+        android:layout_marginTop="28dp"
         android:backgroundTint="#F20858"
         android:text="この店を予約する"
         android:textSize="15sp"
@@ -77,46 +77,51 @@
 
         android:layout_width="100sp"
         android:layout_height="100sp"
-        android:layout_marginStart="45sp"
+        android:layout_marginStart="76dp"
         android:layout_marginTop="-40sp"
         app:layout_constraintStart_toEndOf="@+id/textShopH1"
-        app:layout_constraintTop_toTopOf="@+id/textShopDetails"
-        />
+        app:layout_constraintTop_toTopOf="@+id/textShopDetails" />
 
     <Button
         android:id="@+id/buttonReSearch"
-        android:text="再検索"
-        android:textSize="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/textShopDetails"
+        android:layout_marginTop="504dp"
+        android:text="再検索"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toStartOf="@+id/buttonGoHome"
+        app:layout_constraintHorizontal_bias="0.577"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/textShopDetails" />
 
     <Button
         android:id="@+id/buttonGoHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="ホームに戻る"
         android:textSize="20dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/buttonReSearch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/buttonReSearch"
+        app:layout_constraintVertical_bias="0.0" />
     <!-- 店2個目 -->
-    <!--
+
     <TextView
         android:id="@+id/textShopN2"
-        android:text="ショップ2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="96dp"
+        android:text="店名"
         android:textSize="23sp"
-        android:layout_marginTop="50sp"
-        android:layout_marginStart="10sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textShopJ1" />
+        app:layout_constraintTop_toBottomOf="@+id/textShopH1" />
+
     <TextView
         android:id="@+id/textShopJ2"
-        android:text="ジャンル: カフェ"
+        android:text="ジャンル"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
@@ -134,12 +139,13 @@
         app:layout_constraintStart_toEndOf="@+id/textShopJ2"
         app:layout_constraintTop_toTopOf="@+id/textShopJ2" />
 
+
     <Button
         android:id="@+id/buttonShopR2"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
-        android:layout_marginTop="65sp"
+        android:layout_marginTop="116dp"
         android:backgroundTint="#F20858"
         android:text="この店を予約する"
         android:textSize="15sp"
@@ -148,52 +154,61 @@
         app:layout_constraintStart_toStartOf="@+id/buttonShopR1"
         app:layout_constraintTop_toBottomOf="@+id/buttonShopR1" />
 
+    <!--三件目-->
 
     <ImageView
         android:id="@+id/imageShop2"
         android:layout_width="100sp"
         android:layout_height="100sp"
-        android:layout_marginTop="-40sp"
-        app:layout_constraintStart_toStartOf="@+id/imageShop1"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="@+id/imageShop1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageShop1"
         app:layout_constraintTop_toTopOf="@+id/textShopJ2" />
 
-     店3個目
     <TextView
         android:id="@+id/textShopN3"
-        android:text="ショップ3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="100dp"
+        android:text="店名"
         android:textSize="23sp"
-        android:layout_marginTop="50sp"
-        android:layout_marginStart="10sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textShopJ2" />
+
     <TextView
         android:id="@+id/textShopJ3"
-        android:text="ジャンル: ラーメン"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="ジャンル"
         android:textSize="15sp"
-        android:layout_marginTop="10sp"
-        android:layout_marginStart="15sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textShopN3" />
+
     <TextView
         android:id="@+id/textShopH3"
-        android:text="訪れた人数: 〇〇人"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="訪れた人数: 〇〇人"
         android:textSize="15sp"
-        android:layout_marginStart="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonShopR3"
+        app:layout_constraintEnd_toStartOf="@+id/imageShop3"
+        app:layout_constraintHorizontal_bias="0.025"
         app:layout_constraintStart_toEndOf="@+id/textShopJ3"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ3" />
+        app:layout_constraintTop_toBottomOf="@+id/textShopN3"
+        app:layout_constraintVertical_bias="0.205"
+        tools:ignore="MissingConstraints" />
+
     <Button
         android:id="@+id/buttonShopR3"
         android:layout_width="wrap_content"
 
         android:layout_height="wrap_content"
-        android:layout_marginTop="65sp"
+        android:layout_marginTop="112dp"
         android:backgroundTint="#F20858"
         android:text="この店を予約する"
         android:textSize="15sp"
@@ -206,9 +221,10 @@
         android:id="@+id/imageShop3"
         android:layout_width="100sp"
         android:layout_height="100sp"
-        android:layout_marginTop="-40sp"
-        app:layout_constraintStart_toStartOf="@+id/imageShop1"
         app:layout_constraintEnd_toEndOf="@+id/imageShop1"
-        app:layout_constraintTop_toTopOf="@+id/textShopJ3" /> -->
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imageShop1"
+        tools:layout_editor_absoluteY="418dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
